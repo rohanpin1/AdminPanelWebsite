@@ -5,6 +5,190 @@
       "PackagePath": "staticwebassets\\AdminWeb.bundle.scp.css"
     },
     {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\css\\style-starter.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-starter.css"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\Preloader_11.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\Preloader_11.gif"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar1.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar2.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar3.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar4.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar5.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar6.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\avatar7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar7.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\cart.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cart.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\content.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\content.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\dashboard.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\dashboard.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\desk.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\desk.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\down.png",
+      "PackagePath": "staticwebassets\\assets\\images\\down.png"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\people1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\people1.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\people2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\people2.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\people3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\people3.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\people4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\people4.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\profileimg-big.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\profileimg-big.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\profileimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\profileimg.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sort_asc.png"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sort_both.png"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sort_desc.png"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\team.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\team2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team2.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\team3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team3.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\team4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team4.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\template1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\template1.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\images\\template2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\template2.jpg"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Chart.min.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\bar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bar.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\jquery-1.10.2.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-1.10.2.min.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\jquery.nicescroll.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nicescroll.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\linechart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\linechart.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\modernizr.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\scripts.js"
+    },
+    {
+      "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\assets\\js\\utils.js",
+      "PackagePath": "staticwebassets\\assets\\js\\utils.js"
+    },
+    {
       "Id": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\AdminWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
