@@ -32,18 +32,18 @@
 
 	<div class="w3ls-login box box--big">
 
-		<form action="#" method="post">
+		<form method="post" id="registrationForm">
 			<div class="agile-field-txt">
 				<label>Username </label>
-				<input type="text" name="name" placeholder="Enter User Name" required="" />
+				<input type="text" name="name" id="inputName" placeholder="Enter User Name" />
 			</div>
 			<div class="agile-field-txt">
 				<label>Email </label>
-				<input type="text"  name="name" placeholder="Enter Email" required="" />
+				<input type="text" name="name" id="inputEmail" placeholder="Enter Email" />
 			</div>
 			<div class="agile-field-txt">
 				<label>Phone </label>
-				<input type="text" onkeypress="return /[0-9]/i.test(event.key)" name="name" placeholder="Enter Phone" required="" />
+				<input type="text" onkeypress="return /[0-9]/i.test(event.key)" id="inputPhone" name="name" placeholder="Enter Phone" />
 			</div>
 			<div class="agile-field-txt">
 				<label>Role </label>
@@ -56,11 +56,11 @@
 			</div>
 			<div class="agile-field-txt">
 				<label>Confirm Password </label>
-				<input type="password" name="password" placeholder="Enter Password" required="" id="cnfmyInput" />				
+				<input type="password" name="password" id="inputPass" placeholder="Enter Password" id="cnfmyInput" />
 			</div>
-			<div class="agile-field-txt">				
+			<div class="agile-field-txt">
 				<label>password </label>
-				<input type="password" name="password" placeholder="Enter Password" required="" id="myInput" />
+				<input type="password" name="password" id="inputCnfPass" placeholder="Enter Password" id="myInput" />
 				<div class="agile_label">
 
 					<label>Click to go <a onclick="OpenLoginPage()">Login Page</a></label>
@@ -112,3 +112,57 @@
 </body>
 </html>
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+
+	$("#registrationForm").submit(function () {
+
+		var name = $("#inputName").val()
+		var email = $("#inputEmail").val()
+		var phone = $("#inputPhone").val()
+		var role = $("#userrole").val()
+		var pass = $("#inputPass").val();
+		var cnfpass = $("#inputCnfPass").val()
+
+		if (pass === cnfpass) {
+			debugger
+			var model = {
+				Name: name,
+				Role: role,
+				Email: email,
+				Password: pass,
+				Contact: phone,
+			}
+
+			$.ajax({
+
+				url: '/Account/RegisterUser',
+				type:'POST',
+				data:model,
+				success:function(res){
+					debugger
+					console.log(res)
+					if(res.flag == 1){
+						alert(res.message)
+						window.location.href = '/Account/Login'
+					}
+				},
+				error:function(res){
+					debugger;
+					console.log(res)
+				}
+
+
+			})
+			
+
+
+		}
+		else {
+			alert("Password Doesn't Matched!")
+		}
+
+	})
+
+</script>

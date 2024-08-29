@@ -16,10 +16,19 @@ namespace Shared.ResultModel
 		{
 			return new ResultModels() { Message = message, Flag = 1 , Data =  data};
 		}
+		public static dynamic Success(string message)
+		{
+			return new ResultModels() { Message = message, Flag = 1 };
+		}
 
 		public static dynamic Fail(string message, dynamic data)
 		{
 			return new ResultModels() { Message = message, Flag = 0, Data = data };
+		}
+
+		public static dynamic Fail(string message)
+		{
+			return new ResultModels() { Message = message, Flag = 0 };
 		}
 	}
 }
