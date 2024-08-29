@@ -6,11 +6,10 @@
 <html>
 
 <head>
-	<title>Spin Login Form Responsive Widget Template :: w3layouts</title>
-	<!-- Meta-Tags -->
+	<title>Register</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Spin Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -23,28 +22,47 @@
 
 	<link href="~/css/font-awesome.css" rel="stylesheet">
 	<link href="~/css/style.css" rel='stylesheet' type='text/css' />
-	<!--// Stylesheets -->
-	<!--fonts-->
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	<!--//fonts-->
+
 </head>
 
 <body>
 	<h1>Spin Register Form </h1>
-	<div class="clear-loading spinner">
-		<span></span>
-	</div>
+
 	<div class="w3ls-login box box--big">
-		<!-- form starts here -->
+
 		<form action="#" method="post">
 			<div class="agile-field-txt">
-				<label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
+				<label>Username </label>
 				<input type="text" name="name" placeholder="Enter User Name" required="" />
 			</div>
 			<div class="agile-field-txt">
-				<label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
+				<label>Email </label>
+				<input type="text"  name="name" placeholder="Enter Email" required="" />
+			</div>
+			<div class="agile-field-txt">
+				<label>Phone </label>
+				<input type="text" onkeypress="return /[0-9]/i.test(event.key)" name="name" placeholder="Enter Phone" required="" />
+			</div>
+			<div class="agile-field-txt">
+				<label>Role </label>
+				<select class="form-select" id="userrole">
+					<option value="admin">Admin</option>
+					<option value="developer">Developer</option>
+					<option value="mgmt">Management</option>
+					<option value="others">Others</option>
+				</select>
+			</div>
+			<div class="agile-field-txt">
+				<label>Confirm Password </label>
+				<input type="password" name="password" placeholder="Enter Password" required="" id="cnfmyInput" />				
+			</div>
+			<div class="agile-field-txt">				
+				<label>password </label>
 				<input type="password" name="password" placeholder="Enter Password" required="" id="myInput" />
 				<div class="agile_label">
+
 					<label>Click to go <a onclick="OpenLoginPage()">Login Page</a></label>
 				</div>
 				<div class="agile-right">
@@ -62,8 +80,8 @@
 					}
 				}
 			</script>
-			<!-- //end script -->
-			<input type="submit" value="LOGIN">
+
+			<input type="submit" value="REQUEST">
 		</form>
 	</div>
 
@@ -93,3 +111,4 @@
 	<!--//copyright-->
 </body>
 </html>
+

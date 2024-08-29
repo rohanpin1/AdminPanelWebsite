@@ -1078,6 +1078,16 @@
             "rid": "win"
           }
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -2958,6 +2968,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2965,7 +2980,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.18",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.18",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.18"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3001,7 +3017,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\Shared\\Shared.csproj": {
+              "projectPath": "E:\\c#\\javascript\\AdminPanelWebsite\\AdminWeb\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

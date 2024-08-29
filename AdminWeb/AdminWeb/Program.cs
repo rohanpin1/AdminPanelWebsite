@@ -1,3 +1,5 @@
+using AdminWeb.Abstraction.IServices;
+using AdminWeb.Abstraction.Services;
 using AdminWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AdminPnlContext>(x => x.UseSqlServer("Server=ROHAN\\SQLEXPRESS;Database=AdminPnl;Trusted_Connection=True;encrypt=false;"));
+builder.Services.AddScoped<IAccountServices, AccountServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
