@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CgGumG4jonUJLVtQQz6C4k8vi6i/VB5GG6kW9X97UNw=",
+  "Source": "AdminWebApi",
+  "BasePath": "_content/AdminWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
