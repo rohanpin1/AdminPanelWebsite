@@ -34,7 +34,7 @@ namespace AdminWeb.Abstraction.Services
 						users.Role = request.Role;
 
 						_context.Users.Add(users);
-					    await _context.SaveChangesAsync();
+						await _context.SaveChangesAsync();
 
 						return ResultModels.Success("Successfully Registered");
 					}
@@ -48,6 +48,36 @@ namespace AdminWeb.Abstraction.Services
 					return ResultModels.Fail("Fatal Error");
 				}
 
+			}
+			catch (Exception)
+			{
+				return ResultModels.Fail("Fatal Error");
+				throw;
+			}
+		}
+
+		public async Task<ResultModels> Login(UserLoginRequest request)
+		{
+			try
+			{
+				if (request != null)
+				{
+
+					var checkUser = await _context.Users.FirstOrDefaultAsync(x => x.Email == request.Username && x.Password == request.Password);
+
+					if (checkUser != null)
+					{
+						return ResultModels.Success("Login Successfull");
+					}
+					else
+					{
+						return ResultModels.Success("Incorrect Credentials");
+					}
+				}
+				else
+				{
+					return ResultModels.Fail("Fatal Error");
+				}
 			}
 			catch (Exception)
 			{

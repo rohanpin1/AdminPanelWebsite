@@ -23,9 +23,15 @@ namespace AdminWeb.Controllers
         }
 
         [HttpPost]
-		public async Task<ResultModels> RegisterUser(RegisterUserRequests request)
+        public async Task<ResultModels> RegisterUser(RegisterUserRequests request)
         {
             return await _accountServices.RegisterUser(request);
+        }
+
+        [HttpPost]
+        public async Task<ResultModels> Login(UserLoginRequest request)
+        {
+            return await _accountServices.Login(request);
         }
 
 	}

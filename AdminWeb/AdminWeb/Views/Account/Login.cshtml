@@ -35,14 +35,14 @@
 	</div>
 	<div class="w3ls-login box box--big">
 		<!-- form starts here -->
-		<form action="#" method="post">
+		<form class="loginForm" method="post">
 			<div class="agile-field-txt">
 				<label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
-				<input type="text" name="name" placeholder="Enter User Name" required="" />
+				<input type="text" class="inputName" name="name" placeholder="Enter User Name" required="" />
 			</div>
 			<div class="agile-field-txt">
 				<label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
-				<input type="password" name="password" placeholder="Enter Password" required="" id="myInput" />
+				<input type="password" class="inputPass" name="password" placeholder="Enter Password" required="" id="myInput" />
 				<div class="agile_label">					
 					<label>Click to go <a onclick="OpenRegisterPage()">Register Page</a></label>
 				</div>
@@ -91,3 +91,36 @@
 	<!--//copyright-->
 </body>
 </html>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+	$(".loginForm").submit(function(){
+		debugger
+		var name = $(".inputName").val()
+		var password = $(".inputPass").val()
+
+		var model = {
+			Username : name,
+			Password : password
+		}
+
+		$.ajax({
+			url:'/account/login',
+			type:'POST',
+			data:model,
+			success:function(res){
+				if(res.flag == 1){
+					alert(res.message)
+					window.location.href = '/home/index'
+				}
+				else{
+					alert(res.message)
+				}
+			},
+			error:function(res){
+				console.log(res)
+			}
+
+		})
+	})
+</script>

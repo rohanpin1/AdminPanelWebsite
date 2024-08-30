@@ -56,11 +56,11 @@
 			</div>
 			<div class="agile-field-txt">
 				<label>Confirm Password </label>
-				<input type="password" name="password" id="inputPass" placeholder="Enter Password" id="cnfmyInput" />
+				<input type="password" name="password" id="inputPass" placeholder="Enter Password" />
 			</div>
 			<div class="agile-field-txt">
 				<label>password </label>
-				<input type="password" name="password" id="inputCnfPass" placeholder="Enter Password" id="myInput" />
+				<input type="password" name="password" id="inputCnfPass" placeholder="Enter Password" />
 				<div class="agile_label">
 
 					<label>Click to go <a onclick="OpenLoginPage()">Login Page</a></label>
@@ -147,17 +147,15 @@
 						alert(res.message)
 						window.location.href = '/Account/Login'
 					}
+					else{
+						alert(res.message)
+					}
 				},
 				error:function(res){
 					debugger;
 					console.log(res)
 				}
-
-
 			})
-			
-
-
 		}
 		else {
 			alert("Password Doesn't Matched!")
