@@ -11,8 +11,30 @@
 		</tr>
 	</thead>
 	<tbody class="userRecords">
-		<tr>
-
-		</tr>
+		
 	</tbody>
 </table>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		$.ajax({
+			url: 'https://localhost:7139/api/User/GetAllUsers',
+			type:'GET',
+			success:function(res){
+				console.log(res)
+				res.forEach(function(x){
+					console.log(x)
+					$(".userRecords").append('<tr><td>'+ x.name +'</td><td>'+ x.contact +'</td><td>'+x.role+'</td>'+'<td><button class="btn btn-primary" userid='+x.userId+'>'+'Delete'+'</button></td>'+'<td><button class="btn btn-primary"userid ='+x.userId+'>Edit</button></td></tr>')
+				})
+			},
+			error:function(res){
+				console.log(res)
+			}
+		})
+
+	})
+
+</script>

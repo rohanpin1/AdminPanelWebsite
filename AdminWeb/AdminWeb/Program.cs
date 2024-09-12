@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AdminPnlContext>(x => x.UseSqlServer("Server=ROHAN\\SQLEXPRESS;Database=AdminPnl;Trusted_Connection=True;encrypt=false;"));
+builder.Services.AddDbContext<AdminPnlContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<IAccountServices, AccountServices>();
 
 

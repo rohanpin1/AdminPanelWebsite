@@ -1,4 +1,6 @@
 using AdminWebApi.Context;
+using AdminWebApi.Repositories.Abstraction;
+using AdminWebApi.Repositories.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IUsersRepositories,UsersRepositories>();	
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
