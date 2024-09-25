@@ -38,9 +38,10 @@ namespace AdminWebApi.Repositories.Services
 			{
 				using(var connection = _context.CreateConnection())
 				{
-					var result = await connection.ExecuteAsync("deleteuser", new {id = id},commandType:System.Data.CommandType.StoredProcedure)>0;
+					//var result = await connection.ExecuteAsync("deleteuser", new {id = id},commandType:System.Data.CommandType.StoredProcedure)>0;
 
-					return result;
+					//return result;
+					return true;
 				}
 			}
 			catch (Exception)
