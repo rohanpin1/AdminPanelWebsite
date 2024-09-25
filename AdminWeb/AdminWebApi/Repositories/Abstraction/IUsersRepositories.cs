@@ -6,6 +6,6 @@ namespace AdminWebApi.Repositories.Abstraction
 	public interface IUsersRepositories
 	{
 		Task<IEnumerable<UsersModel>> GetUsersAllAsync();
-		Task DeleteUser(Guid id);
+		Task<bool> DeleteUser(Guid id);
 	}
 }

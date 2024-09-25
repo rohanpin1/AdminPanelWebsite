@@ -21,5 +21,11 @@ namespace AdminWebApi.Controllers
 			return await _usersRepositories.GetUsersAllAsync();
 		}
 
+		[HttpDelete("DeleteUser")]
+		public async Task<bool> DeleteUser(Guid id)
+		{
+			return await _usersRepositories.DeleteUser(id);
+		}
+
 	}
 }

@@ -32,15 +32,20 @@ namespace AdminWebApi.Repositories.Services
 			}
 		}
 
-		public async Task DeleteUser(Guid id)
-		{
+		public async Task<bool> DeleteUser(Guid id)
+		{	
 			try
 			{
+				using(var connection = _context.CreateConnection())
+				{
+					var result = await connection.ExecuteAsync("deleteuser", new {id = id},commandType:System.Data.CommandType.StoredProcedure)>0;
 
+					return result;
+				}
 			}
 			catch (Exception)
 			{
-
+				
 				throw;
 			}
 		}
