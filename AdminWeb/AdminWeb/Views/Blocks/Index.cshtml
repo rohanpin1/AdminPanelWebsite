@@ -27,7 +27,7 @@
 				console.log(res)
 				res.forEach(function(x){
 					console.log(x)
-					$(".userRecords").append('<tr><td>'+ x.name +'</td><td>'+ x.contact +'</td><td>'+x.role+'</td>'+'<td><button class="btn btn-primary" userid='+x.userId+'>'+'Delete'+'</button></td>'+'<td><button class="btn btn-primary"userid ='+x.userId+'>Edit</button></td></tr>')
+					$(".userRecords").append('<tr><td>'+ x.name +'</td><td>'+ x.contact +'</td><td>'+x.role+'</td>'+'<td><button class="btn btn-primary btn-delete" userid='+x.userId+'>'+'Delete'+'</button></td>'+'<td><button class="btn btn-primary btn-edit"userid ='+x.userId+'>Edit</button></td></tr>')
 				})
 			},
 			error:function(res){
@@ -35,6 +35,14 @@
 			}
 		})
 
+	})
+
+	$(".btn-delete").on("click",function(){
+		var userid = $(this).attr("userid");
+
+		$.ajax({
+
+		})
 	})
 
 </script>

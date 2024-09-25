@@ -31,5 +31,18 @@ namespace AdminWebApi.Repositories.Services
 				throw;
 			}
 		}
+
+		public async Task DeleteUser(Guid id)
+		{
+			try
+			{
+
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
+		}
 	}
 }
